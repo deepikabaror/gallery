@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="icon.png">
+    <!-- <link rel="icon" type="image/x-icon" href="deepu.jpg"/> -->
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .wrapper{
+            height: 100vh;
+            width: 100vw;
+
+            background-image: radial-gradient(rgb(171, 122, 130),rgb(105, 162, 162),rgb(225, 195, 139),rgb(102, 192, 102),rgb(158, 105, 158));
+            /* overflow-x: hidden;
+            overflow-y: scroll;
+            position: relative; */
+            overflow-x: hidden;
+            overflow-y: auto;
+            scroll-behavior: smooth;
+        }
+        .sun{
+            border-radius: 70px;
+            box-shadow: 5px 5px 5px;
+            color: rgb(208, 171, 79);
+        }
+        .container{
+            height: 100px;
+            width: 100vw;
+            background-color: lightskyblue;
+            display: flex;
+            /* justify-content: flex-end;  */
+            /* justify-content: right; */
+            justify-content: space-evenly;
+            align-items: center;
+            grid-area: 1%;
+            
+            /* position: relative;
+            top: 0%;
+            left: 20%; */
+        }
+        h1{
+            position: relative;
+            right:5%;
+            text-shadow: 3px 3px 3px yellow;
+        }
+        #btn{
+            height: 50px;
+            border-radius: 30px;
+            width: 90px;
+            box-shadow: 4px 4px 4px;
+            font-weight: bold;
+            color: darkblue;
+
+        }
+        #btn:hover{
+            background-color: darkorange;
+        }
+        #img{
+           border-radius: 40px;
+           box-shadow: 5px 5px 5px;
+        
+        }
+       /* .side{
+        position: relative;
+        top: 0%;
+        left: 20%;
+
+       } */
+       .dipi{
+        border-radius: 50px;
+        
+       }
+       h2{
+        font-size: x-larger;
+        color: darkgreen;
+        font-style: italic;
+        /* margin: 15px;
+        position: relative; */
+        box-shadow: 3px 3px 3px;
+        color: deeppink;
+        /* background-color: rgb(84, 83, 88); */
+       }
+       .home{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       }
+       .home-img img {
+        width: 25vw;
+        height: 400px;
+        animation: floatImage 4s ease-in-out infinite;
+    }
+    @keyframes floatImage{
+        0%{
+            transform: translateX(9);
+        }
+        50%{
+            transform: translateY(2.9rem);
+        }
+        100%{
+            transform: translateX(8);
+        }
+    }
+    .section{
+        display: grid;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 10%;
+        margin-left: 10%;
+    }
+   
+    #helo{
+        font-weight: bold;
+        color: chartreuse;
+        font-size: 5rem;
+        font-display: 3px;
+        text-shadow: 4px 4px 4px rgb(27, 28, 26);
+
+    }
+    h4{
+        font-size: xx-large;
+    }
+   #name{
+    font-size: 3rem;
+    color: rgba(8, 218, 255, 0.947);
+    text-shadow: 4px 4px 4px rgb(23, 22, 22);
+   }
+   #helo:hover{
+    color: mediumseagreen;
+   }
+   #font{
+    font-style: italic;
+    color: rgb(52, 29, 66);
+    font-weight: bold;
+    font-size: 2rem;
+    text-shadow: 4px 4px 4px rgb(45, 43, 43);
+   }
+   #font:hover{
+    color: darkslategrey;
+    background-color: darkkhaki;
+    border-inline-start-style: dotted;
+   }
+   #my{
+    font-weight: bold;
+    color: rgb(191, 3, 85);
+    font-size: large;
+   }
+   #btn{
+    position: relative;
+    left: 2%;
+    margin-left: 10%;
+    
+    font-size: larger;
+    width: 200px;
+   }
+   #imgs{
+    position: relative;
+    margin-left: 60%;
+    bottom: 55%;
+    border-radius: 40px;
+    border: 5px solid greenyellow;
+    box-shadow: -10px -10px 10px 0px;
+    border-style: double;
+    border-right-color: rgb(234, 13, 123);
+    border-bottom-style: groove;
+    border-bottom-right-radius: 4px;
+    filter: grayscale(1);
+    transition: all 1s;
+    animation: scaleImage 8s linear infinite;
+   }
+    /* #imgs{
+        z-index: -9;
+    } */
+    @keyframes scaleImage{
+        0%{
+            filter: grayscale(0);
+            transform: scale(1);
+        }
+        50%{
+            transform: scale(1.1);
+            filter: grayscale(1);
+            box-shadow: 4px 9px 10px black;
+            background-color: aqua;
+        
+        }
+        80%{
+            background-color: rgb(231, 62, 6);
+        }
+        81%{
+            background-color: rgb(217, 195, 24);
+           
+        }
+        90%{
+            background-color: deeppink;
+          
+        }
+        100%{
+            transform: scale(1);
+            filter: grayscale(0);
+            background-color: blue;
+            border-radius: 20px;
+        }
+    }
+
+   /* .icon-plus{
+    z-index: 9;
+    top: -0.8rem;
+    left: 50%;
+    animation: shakeEffectPlus 5s ease-in infinite;
+    }
+
+    @keyframes shakeEffectPlus{
+        50%{
+            left: 3%;
+            bottom: 48%;
+        }
+    }
+     */
+
+   #icon{
+    font-size: larger;
+    position: relative;
+    bottom: 60%;
+    right:19%;
+   }
+
+
+    .hack{
+        height: 100px;
+        width: 350px;
+        position: relative;
+        border: 1px solid black;
+        background-color: black;
+        margin-left: 80%;
+        /* margin-bottom: 100%; */
+        bottom: 51%;
+        /* color: blue; */
+
+        transform: perspective(350px) scaleZ(6) rotateX(39deg) rotateY(10deg);
+    }
+    li{
+        color: rgb(241, 241, 81);
+        position: relative;
+        justify-content: center;
+        top: 40%;
+
+        font-weight: bold;
+        text-shadow: 4px 4px 4px rgb(1, 163, 223);
+        transform: perspective(359px) scaleZ(1) rotateX(-39deg) rotateY(17deg);
+        /* z-index: 1; */
+    }
+    .second_contain{
+        height: 100vh;
+        width: 100vw;
+        background-color: rgb(40, 54, 73);
+        position: relative;
+        bottom: 100%;
+        border-radius: 5px;
+        border-top-style: dashed;
+        border-top-color: deeppink;
+    }
+    marquee{
+        background-image: radial-gradient(rgb(240, 60, 15),rgb(125, 75, 84),rgb(250, 250, 96),orange,green);
+        font-weight: bold;
+        color: aqua;
+        font-size: 5rem;
+        width: 104vw;
+        height: 90px;
+        text-shadow: 5px 8px 8px rgb(35, 35, 29);
+    }
+    marquee:hover{
+        color: rgb(230, 111, 171);
+    }
+    .form{
+        display: flex;
+        border: 1px solid rgb(84, 165, 84);
+        height: 80%;
+        width: 80%;
+        margin-left: 10%;
+        border-radius: 5px;
+        box-shadow: 10px 10px 10px 10px;
+        border-bottom-right-radius: 9px;
+        border-left-color: rgb(88, 149, 156);
+        background-image: linear-gradient(rgb(88, 149, 156),orange,rgb(129, 203, 129),rgb(175, 92, 175),rgb(224, 131, 147));
+    }
+    </style>
+
+</head>
+<body>
+    <div class="wrapper">
+        <div class="container">
+            <img id="img" src="d.jpg" height="80px" width="80px"/>
+            <h1>ipika👈</h1>
+                    <h2>Home</h2>
+                    <h2>About Me</h2>
+                    <h2>Portfolio</h2>
+                    <h2>About Me!</h2>
+                <button id="btn">Contact Me</button>
+                <img class="sun" src="sun.jpg" height="60px" width="60px"/>
+                <a href="http://127.0.0.1:5501/Portfolios/index.html" target="_blank">Visit My Portfolio</a>
+        </div>
+
+        <div class="section">
+            <h4 id="helo">Hello! It's Me</h4>
+            <br/>
+            <h3 id="name">Deepika Baror</h3><br/>
+            <h3 id="font">And I'm a Fronted Developer/...</h3><br/>
+            <p id="my">My name is Deepika Baror and I'm<br> 
+                pursuing my B.Tech in Government<br>
+                Women Engineering College.Ajmer<br>
+                and My field computer science<br> 
+                engineering in 4th year.Improve<br>
+                my knowledge.///</p>
+        </div>
+        <div class="social-media">
+            <a href="Linkdin"><img src=""/></a>
+            <a href="Instagram"><img src=""/></a>
+            <a href="Github"><img src=""/></a>
+            <a href="Youtube"><img src=""/></a>
+        </div>
+        <button id="btn">CV Download</button>
+        <a href="#" class="ig">
+            <img id="imgs" src="dipi.jpg" height="400px" width="400px"/>
+            <!-- <img src="plus.png"/>
+            <img src="circle.png"/>
+            <img src="cube.png"/>
+            <img src="dots.png"/> -->
+            <i id="icon">😁😎🫡            🤖🙉😺</i>
+            
+        </a>
+        <div class="hack"><li>THAT'S ABOUT</li></div>
+    </div>
+
+    <div class="second_contain">
+        <h1><MARQUEE>Register form</MARQUEE></h1>
+        <form class="form">
+            <div id="form1">
+                <label for="name">Name</label>
+                <input type="text" placeholder="Name"/>
+                <label for="Email Address">Email Address</label>
+                <input type="email" placeholder="Email Adress"/>
+                <label for="Phone">Phone</label>
+                <input type="number" placeholder="Phone"/>
+                <label for="message">Message</label>
+                <input type="text" placeholder="Message"/>
+                <button><input type="submit" placeholder="SEND"/></button>
+            </div>
+            <div id="form2">
+                <h1>Sign in</h1>
+                <label for="Email">Email</label>
+                <input type="Email" placeholder="Email"/>
+                <label for="password">Password</label>
+                <input type="password" placeholder="Password"/>
+                <button><input type="submit" placeholder="submit"/></button>
+            </div>
+        </form>
+    </div>
+    
+</body>
+</html>
+
+
